@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>认识语句</title>
+	<script type="text/javascript">
+		function oonclick() //定义函数
+		      {
+			 alert("哈哈，调用函数了!");
+
+		      }
+  function Myname(){
+    var myname=prompt("请输入你的姓名:");
+			if(myname!=null)
+			  {   
+			      alert("你好"+myname); 
+			      
+			  }
+			else
+			  {  
+			      alert("你好 my friend.");  
+			      
+			  }
+  }   
+
+ 		function sex(){
+		    var mymessage=confirm("nv?");
+		    if(mymessage==true)
+		    {
+		    	document.write("你是女士!");
+		    }
+		    else
+		    {
+			document.write("你是男士!");
+		    }
+		  }  
+		
+		function rec(){
+			var score; //score变量，用来存储用户输入的成绩值。
+			score = prompt("请输入你的score:","0-100");
+			if(score>=90)
+			{
+			   document.write("你很棒!");
+			}
+			else if(score>=75)
+		    {
+			   document.write("不错吆!");
+			}
+			else if(score>=60)
+		    {
+			   document.write("要加油!");
+		    }
+		    else
+			{
+		       document.write("要努力了!");
+			}
+		  }
+		
+		document.write("Hello");
+
+		document.write("world");
+	</script>
+</head>
+
+<body>
+	<form>
+		<input name="button" type="button" onClick="rec()" value="Your score?" />
+		<input name="button" type="button" onClick="Myname()" value="Your name?" />
+		<input name="button" type="button" onClick="sex()" value="Your sex?" />
+
+		<input type="button"  value="点击我" onclick="oonclick() " />  
+		
+	</form>
+
+</body>
+</html>
+
+  
+
+   
+
